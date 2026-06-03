@@ -1,0 +1,86 @@
+.facilities-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+}
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.parallax-effect-glare-scale {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+}
+
+.facility-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-bottom: 4px solid var(--color-primary);
+}
+
+.inner-element {
+  transform: translateZ(60px);
+}
+
+.facility-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  transform: translateZ(80px);
+}
+
+.facility-title {
+  color: var(--color-text);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  transform: translateZ(50px);
+}
+
+.facility-desc {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  transform: translateZ(40px);
+}
+
+.facility-number {
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  font-size: 8rem;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.03);
+  z-index: 0;
+  transform: translateZ(10px);
+  pointer-events: none;
+}
+
+/* Colorful bottom borders for alternating cards */
+.parallax-effect-glare-scale:nth-child(4n+1) .facility-card {
+  border-bottom-color: var(--color-primary);
+}
+.parallax-effect-glare-scale:nth-child(4n+2) .facility-card {
+  border-bottom-color: var(--color-coral);
+}
+.parallax-effect-glare-scale:nth-child(4n+3) .facility-card {
+  border-bottom-color: var(--color-blue);
+}
+.parallax-effect-glare-scale:nth-child(4n+4) .facility-card {
+  border-bottom-color: var(--color-yellow);
+}

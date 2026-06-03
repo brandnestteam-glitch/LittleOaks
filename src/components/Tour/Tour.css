@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500&display=swap");
+
+.tour-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  background-color: #1a1a1a;
+  color: #FFFFFFDD;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+.tour-card {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 6px 6px 10px 2px rgba(0, 0, 0, 0.6);
+}
+
+.tour-card-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #FFFFFFDD;
+  padding-left: 16px;
+  pointer-events: none;
+}
+
+.tour-content-place {
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.tour-content-title-1,
+.tour-content-title-2 {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.tour-content-start {
+  width: 30px;
+  height: 5px;
+  border-radius: 99px;
+  background-color: #ecad29;
+}
+
+.tour-details {
+  z-index: 22;
+  position: absolute;
+  top: 240px;
+  left: 60px;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .tour-details {
+    top: 150px;
+    left: 20px;
+  }
+}
+
+.tour-details .tour-place-box {
+  height: 46px;
+  overflow: hidden;
+}
+
+.tour-details .tour-place-box .tour-text {
+  padding-top: 16px;
+  font-size: 20px;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #ecad29;
+}
+
+.tour-details .tour-place-box .tour-text:before {
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 4px;
+  border-radius: 99px;
+  background-color: #ecad29;
+}
+
+.tour-details .tour-title-1,
+.tour-details .tour-title-2 {
+  font-weight: 600;
+  font-size: 72px;
+  font-family: "Oswald", sans-serif;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .tour-details .tour-title-1,
+  .tour-details .tour-title-2 {
+    font-size: 48px;
+  }
+}
+
+.tour-details .tour-title-box-1,
+.tour-details .tour-title-box-2 {
+  margin-top: 2px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.tour-details > .tour-desc {
+  margin-top: 24px;
+  width: 500px;
+  font-size: 18px;
+  line-height: 1.6;
+  background: rgba(0,0,0,0.4);
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #ecad29;
+}
+
+@media (max-width: 768px) {
+  .tour-details > .tour-desc {
+    width: 90%;
+    font-size: 14px;
+  }
+}
+
+.tour-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 36px;
+  font-weight: 500;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+}
+
+.tour-nav svg {
+  width: 24px;
+  height: 24px;
+}
+
+.tour-svg-container {
+  width: 24px;
+  height: 24px;
+  color: #ecad29;
+}
+
+.tour-nav > div {
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.tour-nav > div:first-child {
+  gap: 15px;
+}
+
+.tour-close-btn {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 99px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.tour-close-btn:hover {
+  background: #ecad29;
+  border-color: #ecad29;
+  color: #1a1a1a;
+}
+
+.tour-indicator {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 5px;
+  z-index: 60;
+  background-color: #ecad29;
+}
+
+.tour-pagination {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.tour-progress-sub-container {
+  z-index: 60;
+  width: 400px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .tour-progress-sub-container {
+    width: 200px;
+  }
+}
+
+.tour-progress-sub-background {
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff33;
+}
+
+.tour-progress-sub-foreground {
+  height: 3px;
+  background-color: #ecad29;
+}
+
+.tour-slide-numbers {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  z-index: 60;
+  position: relative;
+  margin-left: 20px;
+}
+
+.tour-item {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.tour-cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1a1a1a;
+  z-index: 100;
+}

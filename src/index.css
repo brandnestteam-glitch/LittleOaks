@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Caveat:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+  /* Colors */
+  --color-primary: #2DBE6C;
+  --color-navy: #0D1B2A;
+  --color-yellow: #FFD43B;
+  --color-coral: #FF4D6D;
+  --color-blue: #4CC9F0;
+  --color-cream: #FFF8F0;
+  --color-white: #FFFFFF;
+  --color-gray: #6B7280;
+  --color-light-gray: #F3F4F6;
+  
+  /* Typography */
+  --font-display: 'Fraunces', serif;
+  --font-heading: 'Baloo 2', cursive;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-accent: 'Caveat', cursive;
+  
+  /* Tokens */
+  --radius-card: 28px;
+  --radius-btn: 100px;
+  --shadow-card: 0 24px 64px rgba(0,0,0,0.10);
+  --shadow-hover: 0 40px 80px rgba(0,0,0,0.18);
+  --shadow-soft: 0 8px 32px rgba(0,0,0,0.06);
+  --transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-navy);
+  background-color: var(--color-white);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+}
+
+.display-heading {
+  font-family: var(--font-display);
+}
+
+.accent-text {
+  font-family: var(--font-accent);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* Utilities */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  border-radius: var(--radius-btn);
+  font-weight: 600;
+  font-size: 16px;
+  transition: var(--transition);
+  gap: 8px;
+}
+
+.btn:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.btn-primary {
+  background-color: var(--color-coral);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 12px 32px rgba(255, 77, 109, 0.3);
+}
+
+.btn-secondary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-secondary:hover {
+  box-shadow: 0 12px 32px rgba(45, 190, 108, 0.3);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--color-navy);
+  border: 2px solid var(--color-navy);
+}
+
+.btn-ghost:hover {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+}
+
+.text-gradient-green {
+  background: linear-gradient(135deg, var(--color-primary), #1a9e52);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Sections */
+section {
+  padding: 100px 0;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+}
+
+/* Base custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-light-gray); 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1a9e52; 
+}

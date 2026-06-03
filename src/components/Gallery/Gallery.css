@@ -1,0 +1,118 @@
+.gallery-section {
+  padding: 100px 0;
+  background-color: var(--color-white);
+}
+
+.masonry-grid {
+  column-count: 1;
+  column-gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry-grid {
+    column-count: 3;
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 24px;
+  border-radius: var(--radius-card);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.masonry-item img {
+  transition: transform 0.6s ease;
+}
+
+.masonry-item:hover img {
+  transform: scale(1.1);
+}
+
+
+.masonry-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.masonry-emoji {
+  font-size: 80px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.masonry-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+  color: var(--color-white);
+  padding: 30px 20px 20px;
+  text-align: center;
+  height: 100px;
+}
+
+.masonry-item:hover .masonry-overlay {
+  opacity: 1;
+}
+
+.masonry-title {
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0.9;
+  transform: translateY(20px);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.masonry-item:hover .masonry-title {
+  transform: translateY(0);
+}
+
+.instagram-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.insta-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  padding: 16px 32px;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: var(--transition);
+}
+
+.insta-link:hover {
+  background-color: var(--color-primary);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(45, 190, 108, 0.3);
+}

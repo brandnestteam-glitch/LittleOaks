@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" width="220" height="48">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&amp;display=swap');
+      .logo-text {
+        font-family: 'Baloo 2', system-ui, sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        dominant-baseline: central;
+      }
+    </style>
+  </defs>
+  <text x="2" y="26" class="logo-text">
+    <tspan fill="#FFD43B">L</tspan>
+    <tspan fill="#FF4D6D">I</tspan>
+    <tspan fill="#2DBE6C">T</tspan>
+    <tspan fill="#4CC9F0">T</tspan>
+    <tspan fill="#FFD43B">L</tspan>
+    <tspan fill="#FF4D6D">E</tspan>
+    <tspan xml:space="preserve"> </tspan>
+    <tspan fill="#2DBE6C">O</tspan>
+    <tspan fill="#FF4D6D">A</tspan>
+    <tspan fill="#FFD43B">K</tspan>
+    <tspan fill="#4CC9F0">S</tspan>
+  </text>
+</svg>
