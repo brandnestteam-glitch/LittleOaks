@@ -45,7 +45,7 @@ const ContactFooter = () => {
                   <div className="contact-icon"><EnvelopeSimple weight="fill" /></div>
                   <div>
                     <strong>Email Address</strong>
-                    <p><a href="mailto:info@littleoaks.edu.in">info@littleoaks.edu.in</a></p>
+                    <p><a href="mailto:littleoaksbhubaneswar@gmail.com">littleoaksbhubaneswar@gmail.com</a></p>
                   </div>
                 </li>
               </ul>

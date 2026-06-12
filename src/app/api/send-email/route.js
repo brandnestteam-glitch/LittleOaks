@@ -13,7 +13,7 @@ export async function POST(request) {
     const { parentName, parentEmail, childName, phone, childAge, programInterest } = await request.json();
 
     const { data, error } = await resend.emails.send({
-      from: 'Leads(LittleOaks) <onboarding@resend.dev>', // Update this with your verified domain if available
+      from: 'Leads(LittleOaks) <info@littleoaksbbsr.in>',
       to: ['littleoaksbhubaneswar@gmail.com'], // The email address you want to receive the inquiries
       subject: `New Admission Inquiry - ${parentName}`,
       html: `
@@ -67,7 +67,7 @@ export async function POST(request) {
     // Wrapped in try-catch so if it fails (due to unverified domain), the main request still succeeds
     try {
       await resend.emails.send({
-        from: 'Little Oaks Admissions <onboarding@resend.dev>', // Update to your domain email later (e.g. info@littleoaks.com)
+        from: 'Little Oaks Admissions <info@littleoaksbbsr.in>',
         to: [parentEmail],
         subject: `Thank you for your inquiry, ${parentName}!`,
         html: `
