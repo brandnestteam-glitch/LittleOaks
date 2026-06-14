@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://www.yourdomain.com/sitemap.xml',
+    sitemap: 'https://www.littleoaksbbsr.in/sitemap.xml',
   }
 }

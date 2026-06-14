@@ -1,6 +1,7 @@
 import '../index.css';
 
 export const metadata = {
+  metadataBase: new URL('https://www.littleoaksbbsr.in'),
   title: 'Little Oaks | Premium Pre School & Play School in Bhubaneswar, Odisha',
   description: 'Little Oaks is a premium play school and pre school in Bhubaneswar (BBSR) & Cuttack, Odisha. Find the best school for kids near me with AC campus, smart classes, and zero punishment.',
   keywords: 'premium school, pre school, playschool, kids school, school for kids, bbsr, bhubaneswar, odisha, cuttack, near me, best preschool in bhubaneswar, top play school patrapada',
